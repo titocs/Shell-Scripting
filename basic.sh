@@ -6,4 +6,4 @@ read b
 echo "Thanks $a $b for telling us your name"
 
 # for same line
-read -p a
+read -p "username: " a
