@@ -1,6 +1,5 @@
 #!/bin/sh
 # ------------ Taking Input ----------------
-
 echo "Masukkan nama: "
 read a
 echo "Selamat datang $a, masukkan nama belakangmu: "
