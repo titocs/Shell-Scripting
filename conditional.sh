@@ -15,7 +15,18 @@ integer comparison:
 -le : is less than or equal to. example --> if [ $a -le $b ]
 
 if you want to use symbol:
-< : is less than. example --> 
+< : is less than. example --> if (( "$a" < "$b ))
+<= : is less than or equal to. example --> if (( "$a" <= "$b ))
+> : is greater than. example --> if (( "$a" > "$b ))
+>= : is greater than or equal to. example --> if (( "$a" >= "$b ))
+
+String comparison
+= : is equal to. example --> if [ "$a" = "$b" ]
+== : is equal to. example --> if [ "$a" == "$b" ]
+!= : is not equal to. example --> if [ "$a" != "$b" ]
+< : is less than. example --> if [[ "$a" < "$b" ]]
+> : is greater than. example --> if [[ "$a" > "$b" ]]
+-z : string is null, that is, has zero length
 '
 
 
@@ -26,8 +37,35 @@ then
     echo "condition is true"
 fi
 
-# or
+# --------------
 if (( $count -eq 9 ))
 then
     echo "condition is true"
 fi
+
+# example conditional string
+word = abc
+if [ $word = "abc" ]
+then
+    echo "condition is true"
+fi    
+
+# Example with else
+word = abc
+if [ $word = "abc" ]
+then
+    echo "condition is true"
+else
+    echo "condition is false"
+fi  
+
+# Example elif
+if [ $word = "abc" ]
+then
+    echo "condition is true"
+elif [ $word = "bc" ]
+then
+    echo "condition is not true"
+else
+    echo "condition is false"
+fi  
