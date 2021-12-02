@@ -13,3 +13,5 @@ fi
 
 # for searching directory name, chechk using -d
 # -s for checking whether file is empty or not
+# -r for checking whether file has read permission or not
+# -w for checking whether file has write permission or not, and so on
