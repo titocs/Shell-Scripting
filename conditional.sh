@@ -1,4 +1,5 @@
 # ------------ Conditional ----------------
+
 # basic syntax:
 # if [ condition ]
 # then
