@@ -15,3 +15,8 @@ num1 = 20.5
 num2 = 5
 
 echo "$num1 + $num2" | bc
+
+# Example square root
+num = 27
+echo "scale=2;sqrt($num)" | bc -l
+# - l mean math library
