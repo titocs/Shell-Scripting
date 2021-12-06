@@ -20,3 +20,6 @@ echo "$num1 + $num2" | bc
 num = 27
 echo "scale=2;sqrt($num)" | bc -l
 # - l mean math library
+
+# OR do this
+echo "scale=2;3^3" | bc -l # 27
