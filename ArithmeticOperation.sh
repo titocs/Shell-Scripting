@@ -23,3 +23,6 @@ echo "scale=2;sqrt($num)" | bc -l
 
 # OR do this
 echo "scale=2;3^3" | bc -l # 27
+
+
+# for other operation, you can see in the reference by enter "man bc" in terminal
