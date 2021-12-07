@@ -1,5 +1,4 @@
 #! /bin/bash
-
 vehicle = $1 # to accept argument
 
 case $vehicle in
