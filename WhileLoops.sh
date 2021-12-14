@@ -20,3 +20,11 @@ done
 9
 10
 '
+
+# printing with delay n second
+while [ $n -le 10 ] # or (($n <= 10))
+do
+  echo "$n"
+  n = $((n + 1)) # can be change by : (( ++n ))
+  sleep 1
+done
