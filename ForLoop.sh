@@ -84,3 +84,13 @@ Download
 Music
 ...
 '
+
+# ----------------------- for loop break and continue -------------------------
+for ((i=1; i<=5; i++))
+do
+  if [$i -eq 3 -o $i -eq 6]
+  then
+    continue  # or break
+  fi
+  echo "$i"
+done
