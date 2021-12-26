@@ -1,5 +1,4 @@
 #! bin/bash
-
 os = ('Ubuntu', 'Windows', 'Kali')
 echo "${os[@]}" # output: Ubuntu Windows Kali
 
